@@ -1,0 +1,4 @@
+FROM odedns/dev1:v3
+EXPOSE 8080
+COPY jenkins.war /root/jenkins.war
+ENTRYPOINT [ "java", "-jar", "/root/jenkins.war" ]
